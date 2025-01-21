@@ -2,12 +2,13 @@
   "manifest_version": 3,
   "name": "Define Extension (Gemini)",
   "version": "1.0",
-  "description": "Get definitions of selected words instantly using Google's Gemini API.",
+  "description": "Get definitions of selected words instantly using Google's Gemini API and DictionaryAPI.",
   "permissions": [
     "storage"
   ],
   "host_permissions": [
-    "https://generativelanguage.googleapis.com/*"
+    "https://generativelanguage.googleapis.com/*",
+    "https://api.dictionaryapi.dev/*"
   ],
   "content_scripts": [
     {
