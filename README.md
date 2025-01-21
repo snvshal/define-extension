@@ -4,6 +4,14 @@
 
 The **Define Word Chrome Extension** enhances your browsing experience by allowing you to instantly view the definition of any single word you select on a webpage. It features a sleek dark-themed dialog box that appears above the selected word, ensuring smooth and user-friendly interaction. This extension is powered by AI or a dictionary API, providing definitions in multiple languages.
 
+## Screenshots
+
+### Settings Dialog
+![Screenshot 2025-01-21 221358](https://github.com/user-attachments/assets/92f707b2-a1b3-423a-83c2-76c6118b1548)
+
+### Select a Word and Click Define
+![Screenshot 2025-01-21 221928](https://github.com/user-attachments/assets/945aa428-032c-41e7-8663-383c6d1afde8)
+
 ---
 
 ## Features
