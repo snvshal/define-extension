@@ -1,11 +1,85 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Text Define</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Define Extension Settings</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@400;500&family=Poppins:wght@400;500&family=Open+Sans:wght@400;500&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>Text Define</h1>
-  <p>Select text on a webpage, right-click, and choose "Define" to see its meaning.</p>
+    <div class="setting-group">
+        <label>Choose Dictionary API:</label>
+        <div class="radio-label">
+            <input type="radio" id="free-api" name="api-choice" value="free">
+            <label for="free-api">Free Dictionary API</label>
+        </div>
+        <div class="radio-label">
+            <input type="radio" id="gemini-api" name="api-choice" value="gemini">
+            <label for="gemini-api">Gemini API</label>
+        </div>
+        
+        <!-- Gemini API Settings (hidden by default) -->
+        <div id="gemini-settings" class="api-settings">
+            <label for="api-key">API Key:</label>
+            <input type="password" id="api-key" placeholder="Enter your Gemini API key">
+            
+            <label for="language">Language:</label>
+            <select id="language">
+                <optgroup label="Asian Languages">
+                    <option value="hi">Hindi (हिन्दी)</option>
+                    <option value="bn">Bengali (বাংলা)</option>
+                    <option value="te">Telugu (తెలుగు)</option>
+                    <option value="ta">Tamil (தமிழ்)</option>
+                    <option value="mr">Marathi (मराठी)</option>
+                    <option value="gu">Gujarati (ગુજરાતી)</option>
+                    <option value="ja">Japanese (日本語)</option>
+                    <option value="ko">Korean (한국어)</option>
+                    <option value="zh">Chinese (中文)</option>
+                </optgroup>
+                <optgroup label="European Languages">
+                    <option value="en" selected>English</option>
+                    <option value="es">Spanish (Español)</option>
+                    <option value="fr">French (Français)</option>
+                    <option value="de">German (Deutsch)</option>
+                    <option value="it">Italian (Italiano)</option>
+                    <option value="pt">Portuguese (Português)</option>
+                    <option value="ru">Russian (Русский)</option>
+                </optgroup>
+            </select>
+        </div>
+    </div>
+
+    <div class="setting-group">
+        <label for="font">Font:</label>
+        <select id="font">
+            <option value="Inter">Inter</option>
+            <option value="Roboto">Roboto</option>
+            <option value="Poppins">Poppins</option>
+            <option value="Open Sans">Open Sans</option>
+            <option value="Montserrat">Montserrat</option>
+            <option value="Verdana">Verdana</option>
+            <option value="Arial">Arial</option>
+            <option value="Helvetica">Helvetica</option>
+            <option value="monospace">Monospace</option>
+            <option value="Courier New">Courier New</option>
+            <option value="Georgia">Georgia</option>
+        </select>
+    </div>
+
+    <div class="setting-group">
+        <label>Theme:</label>
+        <div class="theme-label">
+            <input type="radio" id="light-theme" name="theme" value="light">
+            <label for="light-theme">Light</label>
+        
+            <input type="radio" id="dark-theme" name="theme" value="dark">
+            <label for="dark-theme">Dark</label>
+        </div>
+    </div>
+
+    <button id="save-button">Save Settings</button>
+    <div id="status" class="status"></div>
+
+    <script src="popup.js"></script>
 </body>
 </html>
