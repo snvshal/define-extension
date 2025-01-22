@@ -298,7 +298,7 @@ function showDefinitionDialog(word, content) {
     dialog.innerHTML = `
         <div class="dialog-body">
             <strong style="font-size: 1.2em; font-family: ${userSettings.font}">${word}</strong>
-            <p style="margin: 4px 0 0; font-family: ${userSettings.font}; font-size: ${userSettings.fontSize}">${content}</p>
+            <p style="margin: 8px 0 0; font-family: ${userSettings.font}; font-size: ${userSettings.fontSize}">${content}</p>
         </div>
     `;
 
@@ -325,7 +325,7 @@ function updateDefinitionDialog(word, definition) {
     if (dialog) {
         dialog.querySelector(".dialog-body").innerHTML = `
             <strong style="font-size: 1.2em; font-family: ${userSettings.font}">${word}</strong>
-            <p style="margin: 4px 0 0; font-family: ${userSettings.font}; font-size: ${userSettings.fontSize}">${definition}</p>
+            <p style="margin: 8px 0 0; font-family: ${userSettings.font}; font-size: ${userSettings.fontSize}">${definition}</p>
         `;
     }
 }
